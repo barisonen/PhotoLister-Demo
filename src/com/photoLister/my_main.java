@@ -60,6 +60,9 @@ public class my_main {
 				
 				inputFilePath = child.getAbsolutePath();
 				
+				if(inputFilePath.contains(".keep"))
+					continue;
+				
 				String type = inputFilePath.substring(inputFilePath.lastIndexOf('.'));
 				
 				resultingTxtFile = directory + "\\text files\\" + child.getName();
