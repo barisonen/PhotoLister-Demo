@@ -78,7 +78,7 @@ public class my_main {
 					System.out.println();
 					System.out.println();
 					System.out.println();
-
+					
 					fr = new FileReader(resultingTxtFile + ".txt");
 					br = new BufferedReader(fr);
 
@@ -153,7 +153,7 @@ public class my_main {
 
 						}
 						
-						for(int upperCount = count + 1 ; upperCount <= count + upperBound ; upperCount++) {
+						for(int upperCount = count + 1 ; upperCount <= count + upperBound && upperCount < fetchAroundPhotos.length ; upperCount++) {
 			
 							is = new FileInputStream(fetchAroundPhotos[upperCount].getAbsolutePath());
 							String extraOutput = outputFilePath.substring(0, outputFilePath.lastIndexOf('\\')+1) + "photo " + containsCounter + " - extra fetched from front " + secondCounter + type;
